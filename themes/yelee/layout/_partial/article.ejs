@@ -10,7 +10,12 @@
     <% } %>
     <% if (post.link || post.title){ %>
       <header class="article-header">
+	  <div style="margin-top:0px;margin-bottom: 20px;">
         <%- partial('post/title', {class_name: 'article-title'}) %>
+		<% if(theme.word_count && !post.no_word_count){ %>
+			<%- partial('post/word')%>
+		<% } %>
+		</div>
       </header>
       <% if (!index){ %>
       <div class="article-info article-info-post">
@@ -69,6 +74,8 @@
           title: post.title,
           url: config.url+url_for(post.path),
           }) %>
+	<% } else if (theme.livere.on) { %>
+        <%- partial('comments/livere') %>	  
     <% } else if (theme.youyan.on) { %>
         <%- partial('comments/youyan') %>
     <% } else if (theme.disqus.on) { %>

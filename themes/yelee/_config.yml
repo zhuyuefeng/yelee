@@ -19,6 +19,9 @@ avatar: /img/avatar.png
 # Small icon of Your site | 站点小图标地址
 favicon: /img/favicon.png
 
+
+word_count: true  # 单篇 字数统计
+
 # Internationalization | 主题语言
 ## Change Language in SITE's _config.yml | 在站点配置中切换语言
 ## https://hexo.io/docs/internationalization.html
@@ -63,11 +66,11 @@ subnav:
   #Twitter: "#"
   #LinkedIn: "#"
   #QQ: "#"
-  微信: "Wechat"
+  #微信: "Wechat"
   #PayPal: "#"
   #StackOverflow: "#"
   #CodePen: ""
-  Plunker: ""
+  #Plunker: ""
   #Instagram: "#"
   #LOFTER: ""
   #Flickr: "#"
@@ -88,6 +91,10 @@ preload_comment: true
 show_count: false
 ## 是否在主页文章标题旁显示评论数（多说、Disqus）
 ## Add comment count after article title
+
+livere:
+    on: true
+    livere_uid: MTAyMC80NTQwOS8yMTkyMQ==
 
 disqus: 
   #on: true
